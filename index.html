@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,30 +12,32 @@
     ></script>
   </head>
   <body>
- 
-        <!-- Header Navbar -->
+    <!-- Header Navbar -->
     <header class="header">
-      <a href="#" class="logo"><img class="nav-logo" src="./assets/Tour-company.svg" alt=""></a><!--Have question: Maybe add div container for logo?-->
+      <a href="#" class="logo"
+        ><img class="nav-logo" src="./assets/Tour-company.svg" alt="" /></a
+      ><!--Have question: Maybe add div container for logo?-->
       <input type="checkbox" id="check" />
       <label for="check" class="icons">
         <i class="fa-solid fa-bars" id="menu-icon"></i>
         <i class="fa-solid fa-x" id="close-icon"></i>
       </label>
-
       <nav class="navbar">
         <ul class="nav-menu">
           <li class="nav-menu__item"><a href="./index.html">Home</a></li>
           <li class="nav-menu__item"><a href="#about">About</a></li>
-          <li class="nav-menu__item"><a href="./pages/gallery.html">Gallery</a></li>
+          <li class="nav-menu__item">
+            <a href="./pages/gallery.html">Gallery</a>
+          </li>
           <li class="nav-menu__item"><a href="#services">Services</a></li>
-          <li class="nav-menu__item"><a href="#contact">Contact</a></li>          
+          <li class="nav-menu__item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
     <!-- End of Header/Navbar -->
     <main>
       <!-- Hero -->
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="hero-banner">
           <h1>Discover Our Tours</h1>
           <p>
@@ -45,7 +47,10 @@
           <a href="" class="btn hero-btn">Discover</a>
         </div>
         <div class="hero-picture">
-          <img src="./assets/Magic.png" alt="This is a placeholder for an image">
+          <img
+            src="./assets/Magic.png"
+            alt="This is a placeholder for an image"
+          />
         </div>
       </section>
       <!-- about section -->
@@ -162,15 +167,11 @@
     <footer class="section footer">
       <!-- footer links -->
       <ul class="footer-links">
-          <li"><a class="footer-link" href="#">Home</a></li>
-          
-        <li"><a class="footer-link"  href="./pages/about.html">About</a></li>
-
-        <li"><a class="footer-link"  href="./pages/services.html">Gallery</a></li>
-
-        <li"><a class="footer-link"  href="./pages/tours.html">Services</a></li>
-
-        <li"><a class="footer-link"  href="./pages/tours.html">contact</a></li>
+        <li><a class="footer-link" href="#">Home</a></li>
+        <li><a class="footer-link" href="./pages/about.html">About</a></li>
+        <li><a class="footer-link" href="./pages/services.html">Gallery</a></li>
+        <li><a class="footer-link" href="./pages/tours.html">Services</a></li>
+        <li><a class="footer-link" href="./pages/tours.html">contact</a></li>
       </ul>
 
       <!-- footer icons -->
@@ -198,8 +199,8 @@
       </ul>
       <!-- end of footer icons-->
       <p class="copyright">
-        copyright &copy; some tour company <span id="date"></span>.
-        all rights reserved
+        copyright &copy; some tour company <span id="date"></span>. all rights
+        reserved
       </p>
     </footer>
   </body>
