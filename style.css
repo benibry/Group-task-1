@@ -275,6 +275,7 @@ Navbar
   font-weight: 700;
 }
 .nav-center{
+    /* Question: I haven't found where this class is used. What purpose of this class? */
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
@@ -287,7 +288,12 @@ Navbar
   margin-left: 2.5rem;
 }
 
-
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
 
 #check{
     display: none;
@@ -353,13 +359,12 @@ Navbar
     text-transform: capitalize;
     letter-spacing: var(--spacing);
   }
-
   .navbar a:hover{
+    /* Question: Why this rule is located ONLY IN MEDIA QUARY, maybe we can move it(or add another one) in common rules? */    
     color: var(--clr-primary-1);
     background: var(--clr-primary-8);
-
   }
-
+  
   #check:checked~.navbar a{
     transform: translateY(0);
   }
