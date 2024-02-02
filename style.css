@@ -346,7 +346,7 @@ Navbar
   }
 
   #check:checked~.navbar{
-    height: 17.7rem;
+    height: 23.25rem;
   }
 
   .navbar a {
@@ -367,6 +367,13 @@ Navbar
   
   #check:checked~.navbar a{
     transform: translateY(0);
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    gap: 0;
   }
 }
 
@@ -438,6 +445,16 @@ Hero
 
   .hero-banner p {
     max-width: 45rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-picture {
+    order: -1;
   }
 }
 
