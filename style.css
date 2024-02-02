@@ -415,6 +415,17 @@ Hero
   border-color: var(--clr-white);
 }
 
+.hero-picture {
+  max-width: 500px;
+  width: 100%;  
+  padding: 1rem;
+}
+
+.hero-picture img {
+  max-width: 100%;
+  height: auto;
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     background:
