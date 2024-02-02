@@ -15,7 +15,7 @@
  
         <!-- Header Navbar -->
     <header class="header">
-      <a href="#" class="logo"><img class="nav-logo" src="./assets/Tour-company.svg" alt=""></a>
+      <a href="#" class="logo"><img class="nav-logo" src="./assets/Tour-company.svg" alt=""></a><!--Have question: Maybe add div container for logo?-->
       <input type="checkbox" id="check" />
       <label for="check" class="icons">
         <i class="fa-solid fa-bars" id="menu-icon"></i>
@@ -23,11 +23,13 @@
       </label>
 
       <nav class="navbar">
-        <a href="/index.html">Home</a>
-        <a href="#about">About</a>
-        <a href="./pages/gallery.html">Gallery</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <ol class="nav-menu">
+          <li class="nav-menu__item"><a href="./index.html">Home</a></li>
+          <li class="nav-menu__item"><a href="#about">About</a></li>
+          <li class="nav-menu__item"><a href="./pages/gallery.html">Gallery</a></li>
+          <li class="nav-menu__item"><a href="#services">Services</a></li>
+          <li class="nav-menu__item"><a href="#contact">Contact</a></li>          
+        </ol>
       </nav>
     </header>
     <!-- End of Header/Navbar -->
