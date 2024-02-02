@@ -1,12 +1,12 @@
 /*
-=============== 
+===============
 Fonts
 ===============
 */
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
 /*
-=============== 
+===============
 Variables
 ===============
 */
@@ -46,7 +46,7 @@ Variables
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 /*
-=============== 
+===============
 Global Styles
 ===============
 */
@@ -174,7 +174,7 @@ p {
 }
 
 /*
-=============== 
+===============
 Navbar
 ===============
 */
@@ -222,6 +222,11 @@ Navbar
   margin-left: 2.5rem;
 }
 
+.navbar a:hover{
+  color: var(--clr-primary-1);
+  
+
+}
 
 
 #check{
@@ -302,7 +307,7 @@ Navbar
 
 
 /*
-=============== 
+===============
 Hero
 ===============
 */
@@ -361,7 +366,7 @@ Hero
 }
 
 /*
-=============== 
+===============
 About
 ===============
 */
@@ -406,7 +411,7 @@ About
 }
 
 /*
-=============== 
+===============
 Services
 ===============
 */
@@ -414,12 +419,12 @@ Services
 .services{
     background: var(--clr-grey-10);
   }
-  
+
   .service{
     text-align: center;
     margin-bottom: 3rem;
   }
-  
+
   .service-icon{
     background: var(--clr-primary-5);
     color: var(--clr-primary-1);
@@ -428,13 +433,13 @@ Services
     font-size: 2rem;
     margin-bottom: 1.5rem;
   }
-  
+
   .service-text{
     max-width: 20rem;
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   @media screen and (min-width:576px) {
     .services-center{
       display: flex;
@@ -451,7 +456,7 @@ Services
       flex: 0 0 calc(33.3333333% - 1rem);
     }
   }
-  
+
   @media screen and (min-width:1170px){
     .service{
       display: flex;
@@ -469,7 +474,7 @@ Services
   }
 
   /*
-=============== 
+===============
 Contact
 ===============
 */
@@ -477,26 +482,26 @@ Contact
 .contact{
     background: var(--clr-primary-5);
   }
-  
+
   .contact-title{
     color: var(--clr-white);
-  
+
   }
-  
+
   .contact-title p{
     color: var(--clr-primary-8);
   }
-  
+
   .contact-form{
     display: flex;
     max-width: 28rem;
   }
-  
+
   .form-control{
     flex: 1 1 auto;
     color: var(--clr-grey-5);
   }
-  
+
   .form-control, .btn-submit{
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
@@ -507,11 +512,11 @@ Contact
     text-transform: capitalize;
     border: transparent;
   }
-  
+
   .form-control::placeholder{
     color: inherit;
   }
-  
+
   .btn-submit{
     font-family: var(--ff-primary);
     margin-left: 0.5rem;
@@ -520,18 +525,18 @@ Contact
     cursor: pointer;
     transition: var(--transition);
   }
-  
+
   .btn-submit:hover{
     background: var(--clr-primary-1);
     color: var(--clr-primary-5);
   }
-  
+
   @media screen and (min-width:992px){
     .contact-center{
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      
+
     }
     .contact-form{
       align-self: flex-start;
@@ -542,7 +547,7 @@ Contact
   }
 
   /*
-=============== 
+===============
 Footer
 ===============
 */
@@ -553,15 +558,15 @@ Footer
     padding-left: 2rem;
     padding-right: 2rem;
     }
-    
+
     .footer-links, .footer-icons{
       display: flex;
       justify-content: center;
       margin-bottom: 1.5rem;
       flex: wrap;
-    
+
     }
-    
+
     .footer-link{
       color: var(--clr-white);
       text-transform: capitalize;
@@ -570,21 +575,21 @@ Footer
       letter-spacing: var(--spacing);
       transition: var(--transition);
     }
-    
+
     .footer-link:hover{
       color: var(--clr-primary-5);
     }
-    
+
     .footer-icon{
       font-size: 2rem;
       margin-right: 1rem;
       color: var(--clr-primary-8);
     }
-    
+
     .footer-icon:hover{
       color: var(--clr-primary-5);
     }
-    
+
     .copyright{
       text-transform: capitalize;
       letter-spacing: var(--spacing);
@@ -592,7 +597,7 @@ Footer
     }
 
     /*
-=============== 
+===============
 Gallery
 ===============
 */
