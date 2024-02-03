@@ -2,9 +2,74 @@
 =============== 
 Fonts
 ===============
-*/
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
-
+*/
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto/Roboto-Black.ttf');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto/Roboto-BlackItalic.ttf');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto/Roboto-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto/Roboto-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto/Roboto-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto/Roboto-MediumItalic.ttf');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto/Roboto-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto/Roboto-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto/Roboto-Light.ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto/Roboto-LightItalic.ttf');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto/Roboto-Thin.ttf');
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto/Roboto-ThinItalic.ttf');
+  font-weight: 100;
+  font-style: italic;
+}
 /*
 =============== 
 Variables
@@ -63,6 +128,7 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
 }
+
 ul {
   list-style-type: none;
 }
@@ -85,7 +151,6 @@ h4 {
   margin-bottom: 0.75rem;
 }
 h1 {
-  font-size: 3rem;
 }
 h2 {
   font-size: 2rem;
@@ -210,6 +275,7 @@ Navbar
   font-weight: 700;
 }
 .nav-center{
+    /* Question: I haven't found where this class is used. What purpose of this class? */
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
@@ -222,7 +288,12 @@ Navbar
   margin-left: 2.5rem;
 }
 
-
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
 
 #check{
     display: none;
@@ -275,7 +346,7 @@ Navbar
   }
 
   #check:checked~.navbar{
-    height: 17.7rem;
+    height: 23.25rem;
   }
 
   .navbar a {
@@ -288,15 +359,21 @@ Navbar
     text-transform: capitalize;
     letter-spacing: var(--spacing);
   }
-
   .navbar a:hover{
+    /* Question: Why this rule is located ONLY IN MEDIA QUARY, maybe we can move it(or add another one) in common rules? */    
     color: var(--clr-primary-1);
     background: var(--clr-primary-8);
-
   }
-
+  
   #check:checked~.navbar a{
     transform: translateY(0);
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    gap: 0;
   }
 }
 
@@ -345,6 +422,17 @@ Hero
   border-color: var(--clr-white);
 }
 
+.hero-picture {
+  max-width: 500px;
+  width: 100%;  
+  padding: 1rem;
+}
+
+.hero-picture img {
+  max-width: 100%;
+  height: auto;
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     background:
@@ -359,6 +447,46 @@ Hero
     max-width: 45rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-picture {
+    order: -1;
+  }
+}
+
+/*
+=============== 
+Inspiring quote, or a testimonial from a sustomer
+===============
+*/
+.quote {
+  max-width: 650px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.quote__text {
+  font-size: 2em;
+  text-align: justify;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.quote__text::before,
+.quote__text::after {
+  content: '"';
+}
+
+.quote__author {
+  font-size: 1.5em;
+  text-align: right;
+}
+
 
 /*
 =============== 

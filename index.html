@@ -15,26 +15,29 @@
     <!-- Header Navbar -->
     <header class="header">
       <a href="#" class="logo"
-        ><img class="nav-logo" src="./assets/Tour-company.svg" alt=""
+        ><img class="nav-logo" src="./assets/Tour-company.svg" alt="logo image"
       /></a>
       <input type="checkbox" id="check" />
       <label for="check" class="icons">
         <i class="fa-solid fa-bars" id="menu-icon"></i>
         <i class="fa-solid fa-x" id="close-icon"></i>
       </label>
-
       <nav class="navbar">
-        <a href="/index.html">Home</a>
-        <a href="#about">About</a>
-        <a href="./pages/gallery.html">Gallery</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <ul class="nav-menu">
+          <li class="nav-menu__item"><a href="./index.html">Home</a></li>
+          <li class="nav-menu__item"><a href="./pages/about.html">About</a></li>
+          <li class="nav-menu__item">
+            <a href="./pages/gallery.html">Gallery</a>
+          </li>
+          <li class="nav-menu__item"><a href="#services">Services</a></li>
+          <li class="nav-menu__item"><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </header>
     <!-- End of Header/Navbar -->
     <main>
       <!-- Hero -->
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="hero-banner">
           <h1>Discover Our Tours</h1>
           <p>
@@ -43,43 +46,27 @@
           </p>
           <a href="" class="btn hero-btn">Discover</a>
         </div>
-      </section>
-      <!-- about section -->
-      <section class="section" id="about">
-        <!-- title -->
-        <div class="section-title">
-          <h2>about <span>us</span></h2>
-        </div>
-        <!-- end of title -->
-        <div class="section-center">
-          <div class="about-center">
-            <!-- about img wrapper -->
-            <article class="about-img">
-              <img
-                src="./assets/about-jungle.jpeg"
-                class="about-photo"
-                alt="jungle"
-              />
-            </article>
-            <article class="about-info">
-              <h3>explore the difference</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-                voluptas eius? Iure rerum dolorem inventore repellendus eius!
-                Vero, quia deserunt.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-                voluptas eius? Iure rerum dolorem inventore repellendus eius!
-                Vero, quia deserunt.
-              </p>
-              <a href="#" class="btn">read more</a>
-            </article>
-          </div>
+        <div class="hero-picture">
+          <img
+            src="./assets/Magic.png"
+            alt="This is a placeholder for an image"
+          />
         </div>
       </section>
-
-      <!-- end of about section -->
+      <div class="section">
+        <blockquote
+          class="quote"
+          cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote"
+        >
+          <p class="quote__text">
+            Words can be like X-rays, if you use them properly—they’ll go
+            through anything. You read and you’re pierced.
+          </p>
+          <footer class="quote__author">
+            —Aldous Huxley, <cite>Brave New World</cite>
+          </footer>
+        </blockquote>
+      </div>
       <!-- services -->
       <section class="section services" id="services">
         <!-- section-title -->
@@ -159,7 +146,6 @@
       <!-- footer links -->
       <ul class="footer-links">
         <li><a class="footer-link" href="#">Home</a></li>
-
         <li><a class="footer-link" href="./pages/about.html">About</a></li>
 
         <li><a class="footer-link" href="./pages/services.html">Gallery</a></li>
