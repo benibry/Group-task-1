@@ -4,17 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="./fontAwesome/all.min.css" />
     <script
       src="https://kit.fontawesome.com/e0ce8f6187.js"
       crossorigin="anonymous"
     ></script>
-    <title>Tour</title>
   </head>
   <body>
     <!-- Header Navbar -->
-    <header class="header">
+    <section class="header">
       <a href="#" class="logo"
         ><img class="nav-logo" src="../assets/Tour-company.svg" alt="logo image"
       /></a>
@@ -25,16 +24,16 @@
       </label>
       <nav class="navbar">
         <ul class="nav-menu">
-          <li class="nav-menu__item"><a href="/index.html">Home</a></li>
-          <li class="nav-menu__item"><a href="/pages/about.html">About</a></li>
+          <li class="nav-menu__item"><a href="../index.html">Home</a></li>
+          <li class="nav-menu__item"><a href="./about.html">About</a></li>
           <li class="nav-menu__item">
-            <a href="./pages/gallery.html">Gallery</a>
+            <a href="./gallery.html">Gallery</a>
           </li>
-          <li class="nav-menu__item"><a href="#services">Services</a></li>
-          <li class="nav-menu__item"><a href="#contact">Contact</a></li>
+          <li class="nav-menu__item"><a href="./services.html">Services</a></li>
+          <li class="nav-menu__item"><a href="">Contact</a></li>
         </ul>
       </nav>
-    </header>
+    </section>
     <!-- End of Header/Navbar -->
     <main>
       <!-- Hero -->
@@ -43,13 +42,13 @@
           <h1>Discover Our Tours</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consectetur, deserunt..
+            Consectetur, deserunt.
           </p>
           <a href="" class="btn hero-btn">Discover</a>
         </section>
         <section class="hero-picture">
           <img
-            src="./assets/Magic.png"
+            src="../assets/Magic.png"
             alt="This is a placeholder for an image"
           />
         </section>
@@ -96,13 +95,85 @@
             <section class="service-info">
               <h4 class="service-title">endless biking</h4>
               <p class="service-text">
-                Lorem ipsum dolor sit amet consecte
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                placeat voluptas, perspiciatis provident modi optio!
+              </p>
+            </section>
+          </article>
+          <!-- end single service -->
+          <!-- single service -->
+          <article class="service">
+            <span class="service-icon"
+              ><i class="fas fa-socks fa-fw"></i>
+            </span>
+            <section class="service-info">
+              <h4 class="service-title">amazing comfort</h4>
+              <p class="service-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                placeat voluptas, perspiciatis provident modi optio!
               </p>
             </section>
           </article>
           <!-- end single service -->
         </section>
       </section>
+      <!--end services -->
+
+      <!-- contact -->
+      <section class="section contact" id="contact">
+        <section class="section-center contact-center">
+          <!-- contact title -->
+          <article class="contact-title">
+            <h3>want latest tour info updates?</h3>
+            <p>Sign up for newsletter and stay up to date</p>
+          </article>
+          <!-- contact form -->
+          <form class="contact-form">
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              placeholder="your email"
+            />
+            <button type="submit" class="btn-submit">submit</button>
+          </form>
+        </section>
+      </section>
+
+      <!-- end of contact -->
     </main>
-  </body>
-</html>
+    <section class="section footer">
+      <!-- footer links -->
+      <ul class="footer-links">
+        <li><a class="footer-link" href="#">Home</a></li>
+        <li><a class="footer-link" href="./pages/about.html">About</a></li>
+
+        <li><a class="footer-link" href="./pages/services.html">Gallery</a></li>
+
+        <li><a class="footer-link" href="./pages/tours.html">Services</a></li>
+
+        <li><a class="footer-link" href="./pages/tours.html">contact</a></li>
+      </ul>
+
+      <!-- footer icons -->
+      <ul class="footer-icons">
+        <li>
+          <a class="footer-icon" href="https://twitter.com" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a class="footer-icon" href="https://instagram.com" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a class="footer-icon" href="https://facebook.com" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a class="footer-icon" href="https://github.com" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>

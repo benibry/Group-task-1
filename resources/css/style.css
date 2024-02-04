@@ -11,6 +11,16 @@ Variables
 ===============
 */
 
+body {
+  font-family: var(--ff-primary);
+  background: #1F2937;
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+
+
 :root {
   /* dark shades of primary color*/
   --clr-primary-1: hsl(214, 28%, 5%);
@@ -56,13 +66,8 @@ Global Styles
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: var(--ff-primary);
-  background: var(--clr-white);
-  color: var(--clr-grey-1);
-  line-height: 1.5;
-  font-size: 0.875rem;
-}
+
+go-title
 ul {
   list-style-type: none;
 }
@@ -73,7 +78,37 @@ a {
 img:not(.nav-logo) {
   width: 100%;
   display: block;
+  
 }
+
+
+
+
+/*logo left side code*/
+.logo-container { 
+  display: inline-flex; 
+  align-items: center; 
+}
+
+.nav-logo {
+  width: 70px;
+  max-width: 100%;
+}
+
+.logo-title {
+  margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 h1,
 h2,
@@ -143,29 +178,73 @@ p {
   color: var(--clr-primary-1);
   background: var(--clr-primary-8);
 }
-
+header
 .section {
-  padding: 5rem 0;
+  padding: 10px;
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 4rem;
+  margin: 50px auto;
+  color: rgb(255, 255, 255);
 }
 
 .section-title h2 {
   text-transform: uppercase;
 }
 
-.section-title span {
-  color: var(--clr-primary-5);
-}
+
 
 .section-center {
   width: 90vw;
   margin: 0 auto;
   max-width: 1170px;
 }
+
+
+
+
+.section.footer {
+  text-align: center;
+}
+
+.footer-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon {
+  margin: 0 25px;
+}
+
+.copyright {
+  margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 992px) {
   .section-center {
@@ -175,6 +254,7 @@ p {
 
 .bg-grey {
   background: var(--clr-grey-10);
+  margin: 0;
 }
 
 /*
@@ -194,6 +274,7 @@ Navbar
   align-items: center;
   z-index: 100;
   background: var(--clr-primary-5);
+  
 }
 
 .header::before {
@@ -212,6 +293,7 @@ Navbar
   font-size: 2rem;
   color: var(--clr-white);
   font-weight: 700;
+  
 }
 .nav-center {
   width: 100%;
@@ -298,6 +380,27 @@ Navbar
   #check:checked ~ .navbar a {
     transform: translateY(0);
   }
+  #logo-circle {
+    border-radius: 50px;
+  }    
+
+  .img{
+    display: flex;
+    flex-direction: row;
+    float: left;
+    background-color: #626B63;
+  }
+
+
+
+
+
+
+
+
+
+
+
 }
 
 /*
@@ -503,8 +606,7 @@ Footer
 .footer {
   background: var(--clr-grey-1);
   text-align: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  
 }
 
 .footer-links,
