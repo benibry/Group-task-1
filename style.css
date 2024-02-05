@@ -81,7 +81,6 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -416,6 +415,10 @@ quote
 ===============
 */
 
+.quote-center{
+    max-width: 1170px;
+}
+
 blockquote{
     font-size: 36px;
     font-style: italic;
@@ -423,6 +426,18 @@ blockquote{
 
 cite{
     float: right;
+}
+
+@media (max-width:992px){
+    blockquote{
+        font-size: 28px;
+    }
+}
+
+@media (max-width:676px){
+    blockquote{
+        font-size: 22px;
+    }
 }
 
 
