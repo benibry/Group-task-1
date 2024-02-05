@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+    src="https://kit.fontawesome.com/e0ce8f6187.js"
+    crossorigin="anonymous"
+  ></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"><img class="nav-logo" src="./assets/logo-grouptask.svg" alt=""></a>
+      <input type="checkbox" id="check" />
+      <label for="check" class="icons">
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <i class="fa-solid fa-x" id="close-icon"></i>
+      </label>
+      <nav class="navbar">
+        <a href="#about">About</a>
+        <a href="./pages/gallery.html">Boat Show</a>
+        <a href="#services">Boats</a>
+        <a href="/Contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-us">
+        <h1 class="contact-us-title">Contact Us</h1>
+        <div class="contact">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required/>
+            <input type="email" name="Email" placeholder="Your Email"  required/>
+            <textarea
+              name="Message"
+              id="message"
+              rows="6"
+              placeholder="Your Message"
+            required ></textarea>
+            <button type="submit" class="contact-btn">Send</button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+
+    <footer class="section footer">
+      <ul class="footer-icons">
+        <li>
+          <a class="footer-icon" href="https://twitter.com" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a class="footer-icon" href="https://instagram.com" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a class="footer-icon" href="https://facebook.com" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a class="footer-icon" href="https://github.com" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <p class="copyright">
+            copyright &copy; some boat company <span id="date"></span>.
+            all rights reserved
+          </p>
+        </li>
+      </ul>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
