@@ -455,6 +455,9 @@ cta
   padding-bottom: 1rem;
 }
 
+.cta-title h4{
+    padding-top: 1rem;
+}
 .cta-title p {
   color: var(--clr-primary-8);
 
