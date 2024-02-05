@@ -203,6 +203,11 @@ Navbar
   color: var(--clr-white);
   font-weight: 500;
   margin-left: 2.5rem;
+  transition: var(--transition);
+}
+
+.navbar a:hover{
+    color: var(--clr-btn);
 }
 
 #check {
@@ -270,7 +275,7 @@ Navbar
   }
 
   .navbar a:hover {
-    color: var(--clr-primary-1);
+    color: var(--clr-btn);
     background: var(--clr-primary-8);
   }
 
@@ -461,17 +466,17 @@ Footer
 }
 
 .footer-link:hover {
-  color: var(--clr-primary-5);
+  color: var(--clr-btn);
 }
 
 .footer-icon {
   font-size: 2rem;
   margin-right: 1rem;
-  color: var(--clr-primary-8);
+  color: var(--clr-white);
 }
 
 .footer-icon:hover {
-  color: var(--clr-primary-5);
+  color: var(--clr-btn);
 }
 
 .copyright {
