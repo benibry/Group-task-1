@@ -1,18 +1,18 @@
 /*
-=============== 
+===============
 Fonts
 ===============
 */
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
 /*
-=============== 
+===============
 Variables
 ===============
 */
 
 :root {
- 
+
   --ff-primary: 'Roboto', sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
@@ -29,7 +29,7 @@ Variables
 
 }
 /*
-=============== 
+===============
 Global Styles
 ===============
 */
@@ -159,7 +159,7 @@ p {
 }
 
 /*
-=============== 
+===============
 Navbar
 ===============
 */
@@ -221,6 +221,53 @@ Navbar
   color: var(--clr-white);
   cursor: pointer;
   display: none;
+}
+/*----contact form----*/
+
+
+.contact-us {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  background: var(--clr-white);
+}
+
+.contact-us-title{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 20px 25px;
+  border: none;
+  outline: none;
+  color: white;
+  background: var(--clr-hero);
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 300;
+  resize: none;
+}
+
+form .contact-btn{
+  background: var(--clr-btn);
+  color: var(--clr-white);
+  padding: 15px 25px;
+  margin: 10px 25px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.contact-btn:hover{
+  background: var(--clr-hero);
 }
 
 @media (max-width: 992px) {
@@ -285,7 +332,7 @@ Navbar
 }
 
 /*
-=============== 
+===============
 Hero
 ===============
 */
@@ -354,7 +401,7 @@ Hero
   position: relative;
 }
 
-/* =============== 
+/* ===============
 Services
 =============== */
 
@@ -427,7 +474,7 @@ cite{
 
 
 /*
-=============== 
+===============
 cta
 ===============
 */
@@ -475,7 +522,7 @@ cta
 
 
 /*
-=============== 
+===============
 Footer
 ===============
 */
