@@ -410,12 +410,42 @@ Services
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+/*
+=============== 
+quote
+===============
+*/
+
+
+.quote{
+    max-width: 968px;
+    color: #1f2937;
+}
+
+.quote p{
+    font-size: 36px;
+    font-style: italic;
+}
+
+.quote cite{
+    float: right;
+}
+
+.
+
+
 
 /*
 =============== 
 cta
 ===============
 */
+
+.cta-center{
+    max-width: 968px;
+}
+
+
 .cta-btn{
   border: 1px var(--clr-white) solid
 }
@@ -423,15 +453,30 @@ cta
 
 .cta-title {
   color: var(--clr-white);
-  background: var(--clr-btn);
-  border-radius: var(--radius);
   padding: 1rem 2rem;
 
 }
 
+
 .cta-title p {
   color: var(--clr-primary-8);
 
+}
+
+.wrapper{
+    background: var(--clr-btn);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (max-width:768px){
+    .wrapper{
+        flex-direction: column;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
 }
 
 
