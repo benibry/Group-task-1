@@ -457,6 +457,21 @@ Services
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+/*
+=============== 
+quote
+===============
+*/
+
+blockquote{
+    font-size: 36px;
+    font-style: italic;
+}
+
+cite{
+    float: right;
+}
+
 
 /*
 ===============
@@ -464,21 +479,45 @@ cta
 ===============
 */
 .cta-btn{
-  border: 1px var(--clr-white) solid
+  border: 1px var(--clr-white) solid;
+  
+  
 }
-
+.cta-center{
+    max-width: 768px;
+}
 
 .cta-title {
   color: var(--clr-white);
-  background: var(--clr-btn);
-  border-radius: var(--radius);
   padding: 1rem 2rem;
 
 }
 
+.wrapper{
+    background: var(--clr-btn);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 1rem;
+}
+
+.cta-title h4{
+    padding-top: 1rem;
+}
 .cta-title p {
   color: var(--clr-primary-8);
 
+}
+
+@media (max-width:768px){
+
+    .wrapper {
+        flex-direction: column;
+    }
+    .cta-title{
+        text-align: center;
+    }
 }
 
 
