@@ -250,6 +250,7 @@ form input, form textarea {
   border-radius: 6px;
   font-size: 18px;
   font-weight: 300;
+  resize: none;
 }
 
 form .contact-btn{
