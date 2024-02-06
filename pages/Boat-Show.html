@@ -1,169 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <title>Boat show</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="Boat-Show.css" />
     <script
-    src="https://kit.fontawesome.com/e0ce8f6187.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/e0ce8f6187.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header class="header"> 
-      <a href="#" class="logo">
-        <figure class="logo-container">
-          <img class="nav-logo"  src="../images/logo-boatshow.svg" alt="">
-          <figcaption class="logo-title">Boat Show</figcaption>
-        </figure>
-      </a>
-
-
-
-
-
-
-      
-
-
-
-        <input type="checkbox" id="check" />
-        <label for="check" class="icons">
-          <i class="fa-solid fa-bars" id="menu-icon"></i>
-          <i class="fa-solid fa-x" id="close-icon"></i>
-        </label>
-
-
-        <nav class="navbar">
-          <a href="/index.html">Home</a>
-          <a href="./Boat-Show.html">Boat Show</a>
-          <a href="#services">Boats</a>
-          <a href="#about">About Us</a>
-          <a href="#contact">Contact Us</a>
-        </nav>
-
-
-
-      </header>
-
-
-
-   
-      
-    <main>
-      <header class="gallery-hero">
-        <div class="section-title">
-          <h1>Our <span>Gallery</span></h1>
-        </div>
-      </header>
-      <section id="gallery">
-        <div class="gallery-center">
-          <!-- single item -->
-          <article class="gallery-img-container">
-            <img src="../assets/beach-gallery.jpeg" class="gallery-img" alt="" />
-            <a href="#" class="gallery-icon"><i class="fas fa-search"></i></a>
-          </article>
-          <!-- end single item -->
-          <!-- single item -->
-          <article class="gallery-img-container">
-            <img src="../assets/beach-hut-gallery.jpeg" class="gallery-img" alt="" />
-            <a href="#" class="gallery-icon"><i class="fas fa-search"></i></a>
-          </article>
-          <!-- end single item -->
-          <!-- single item -->
-          <article class="gallery-img-container">
-            <img src="../assets/boat-sea-gallery.jpeg" class="gallery-img" alt="" />
-            <a href="#" class="gallery-icon"><i class="fas fa-search"></i></a>
-          </article>
-          <!-- end single item -->
-          <!-- single item -->
-          <article class="gallery-img-container">
-            <img src="../assets/camping-gallery.jpeg" class="gallery-img" alt="" />
-            <a href="#" class="gallery-icon"><i class="fas fa-search"></i></a>
-          </article>
-          <!-- end single item -->
-          <!-- single item -->
-          <article class="gallery-img-container">
-            <img src="../assets/coconuts-gallery.jpeg" class="gallery-img" alt="" />
-            <a href="#" class="gallery-icon"><i class="fas fa-search"></i></a>
-          </article>
-          <!-- end single item -->
-          <!-- single item -->
-          <article class="gallery-img-container">
-            <img src="../assets/marina-gallery.jpeg" class="gallery-img" alt="" />
-            <a href="#" class="gallery-icon"><i class="fas fa-search"></i></a>
-          </article>
-          <!-- end single item -->
-          <!-- single item -->
-          <article class="gallery-img-container">
-            <img src="../assets/mountains-gallery.jpeg" class="gallery-img" alt="" />
-            <a href="#" class="gallery-icon"><i class="fas fa-search"></i></a>
-          </article>
-          <!-- end single item -->
-          <!-- single item -->
-          <article class="gallery-img-container">
-            <img src="../assets/umbrella-gallery.jpeg" class="gallery-img" alt="" />
-            <a href="#" class="gallery-icon"><i class="fas fa-search"></i></a>
-          </article>
-          <!-- end single item -->
-        </div>
-      </section>
-
-      <!-- end of gallery  -->
-    </main>
-    
-
-
-
-
-  
-          
-  
-      <footer class="section footer">
-        <ul class="footer-icons">
-          <li>
-            <a class="footer-icon" href="https://twitter.com" target="_blank">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a class="footer-icon" href="https://instagram.com" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a class="footer-icon" href="https://facebook.com" target="_blank">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a class="footer-icon" href="https://github.com" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <p class="copyright">
-              copyright &copy; some boat company <span id="date"></span>.
-              all rights reserved
-            </p>
-          </li>
-        </ul>
-      </footer>
-      
-      
- 
-
-
-
-
-
-
-
-
-
-
-
-
+    <header class="bs-header">
+      <hgroup class="bs-header__group">
+        <ol class="bs-header__pl">
+          <li class="bs-header__pli">Style category</li>
+          <li class="bs-header__pli">Year 2024</li>
+        </ol>
+        <h1 class="main-heading">The model name of boat</h1>
+        <p>Starting at <span class="price">50</span></p>
+      </hgroup>
+      <ol class="share-links">
+        <li><a href="https://www.facebook.com">F</a></li>
+        <li><a href="https://www.twitter.com">X</a></li>
+      </ol>
+    </header>
+    <div class="wrapper">
+      <main>
+        <section class="slider-section">
+          <h2>Slider of boats</h2>
+          <div class="slider middle">
+            <div class="slides">
+              <input type="radio" name="r" id="r1" checked />
+              <input type="radio" name="r" id="r2" />
+              <input type="radio" name="r" id="r3" />
+              <input type="radio" name="r" id="r4" />
+              <figure class="slide s1">
+                <img
+                  src="../assets/boatshow/Dubai_Boat_Show.jpeg"
+                  alt="Dubai boat show"
+                  class="img"
+                />
+                <figcaption>The Dubai boat show.</figcaption>
+              </figure>
+              <figure class="slide">
+                <img
+                  src="../assets/boatshow/Miami_Boat_Show.jpeg"
+                  alt="Miami boat show"
+                  class="img"
+                />
+                <figcaption>The Miami boat show.</figcaption>
+              </figure>
+              <figure class="slide">
+                <img
+                  src="../assets/boatshow/Palm_Beach_Boat_Show.jpeg"
+                  alt="Palm beach boat show"
+                  class="img"
+                />
+                <figcaption>The Palm beach boat show.</figcaption>
+              </figure>
+              <figure class="slide">
+                <img
+                  src="../assets/boatshow/Sanctuary_Cove_Marina.jpg"
+                  alt="Sanctuary cove marina"
+                  class="img"
+                />
+                <figcaption>The Sanctuary cove marina.</figcaption>
+              </figure>
+            </div>
+            <div class="navigation">
+              <label for="r1" class="bar"></label>
+              <label for="r2" class="bar"></label>
+              <label for="r3" class="bar"></label>
+              <label for="r4" class="bar"></label>
+            </div>
+          </div>
+        </section>
+        <section class="details">
+          <h2 class="details__heading">Description</h2>
+          <p class="details__text">
+            Pursuit’s OS 325 offshore boat delivers a combination of finely
+            engineered features designed with a timeless and elegant,
+            yacht-caliber exterior. Her cabin finished with interior hardwoods,
+            solid stock trim and modern fabrics comfort you for an intimate
+            overnight in your private cove or harbor.
+          </p>
+          <h2 class="details__heading">Basic Details</h2>
+          <dl>
+            <dt class="details__item">Type</dt>
+            <dd class="details__text">Cabin</dd>
+            <dd class="details__text">Cruisers</dd>
+            <dt class="details__item">Length</dt>
+            <dd class="details__text">34'6''</dd>
+            <dt class="details__item">Propulsion</dt>
+            <dd class="details__text">Outboard</dd>
+            <dt class="details__item">Year</dt>
+            <dd class="details__text">2024</dd>
+          </dl>
+        </section>
+      </main>
+      <aside>
+        <p>Here can be your advertising!</p>
+      </aside>
+    </div>
   </body>
 </html>
