@@ -565,3 +565,13 @@ Footer
   letter-spacing: var(--spacing);
   color: var(--clr-white);
 }
+
+.link-to-details {
+  display: block;
+  margin: 1rem 0;
+}
+
+.link-to-details::after {
+  content: "\021D2";
+  margin-left: 5px;
+}

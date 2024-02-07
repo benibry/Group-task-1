@@ -5,104 +5,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boat show</title>
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="Boat-Show.css" />
+    <link rel="stylesheet" href="../css/Boat-Show.css" />
     <script
       src="https://kit.fontawesome.com/e0ce8f6187.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header class="bs-header">
-      <hgroup class="bs-header__group">
-        <ol class="bs-header__pl">
-          <li class="bs-header__pli">Style category</li>
-          <li class="bs-header__pli">Year 2024</li>
-        </ol>
-        <h1 class="main-heading">The model name of boat</h1>
-        <p>Starting at <span class="price">50</span></p>
-      </hgroup>
-      <ol class="share-links">
-        <li><a href="https://www.facebook.com">F</a></li>
-        <li><a href="https://www.twitter.com">X</a></li>
-      </ol>
-    </header>
-    <div class="wrapper">
-      <main>
-        <section class="slider-section">
-          <h2>Slider of boats</h2>
-          <div class="slider middle">
-            <div class="slides">
-              <input type="radio" name="r" id="r1" checked />
-              <input type="radio" name="r" id="r2" />
-              <input type="radio" name="r" id="r3" />
-              <input type="radio" name="r" id="r4" />
-              <figure class="slide s1">
-                <img
-                  src="../assets/boatshow/Dubai_Boat_Show.jpeg"
-                  alt="Dubai boat show"
-                  class="img"
-                />
-                <figcaption>The Dubai boat show.</figcaption>
-              </figure>
-              <figure class="slide">
-                <img
-                  src="../assets/boatshow/Miami_Boat_Show.jpeg"
-                  alt="Miami boat show"
-                  class="img"
-                />
-                <figcaption>The Miami boat show.</figcaption>
-              </figure>
-              <figure class="slide">
-                <img
-                  src="../assets/boatshow/Palm_Beach_Boat_Show.jpeg"
-                  alt="Palm beach boat show"
-                  class="img"
-                />
-                <figcaption>The Palm beach boat show.</figcaption>
-              </figure>
-              <figure class="slide">
-                <img
-                  src="../assets/boatshow/Sanctuary_Cove_Marina.jpg"
-                  alt="Sanctuary cove marina"
-                  class="img"
-                />
-                <figcaption>The Sanctuary cove marina.</figcaption>
-              </figure>
+    <div class="container">
+      <header class="bs-header">
+        <a class="close-button" href="./boats.html">
+          <img
+            class="cb-icon"
+            src="../assets/close-mini.svg"
+            alt="Close button"
+          />
+        </a>
+        <hgroup class="bs-header__group">
+          <ul class="bs-header__pl">
+            <li class="bs-header__pli">Style category</li>
+            <li class="bs-header__pli">Year 2024</li>
+          </ul>
+          <h1 class="main-heading">The model name of boat</h1>
+          <p>Starting at <span class="price">5000</span></p>
+        </hgroup>
+        <ul class="share-links">
+          <li>
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </header>
+      <div class="bs-wrapper">
+        <main>
+          <section class="slider-section">
+            <h2>Images of boat model</h2>
+            <div class="slider">
+              <!--class="middle"-->
+              <div class="slides">
+                <input type="radio" name="r" id="r1" checked />
+                <input type="radio" name="r" id="r2" />
+                <input type="radio" name="r" id="r3" />
+                <input type="radio" name="r" id="r4" />
+                <figure class="slide s1">
+                  <img
+                    src="../assets/boatshow/Dubai_Boat_Show.jpeg"
+                    alt="Dubai boat show"
+                    class="img"
+                  />
+                  <figcaption>The Dubai boat show.</figcaption>
+                </figure>
+                <figure class="slide">
+                  <img
+                    src="../assets/boatshow/Miami_Boat_Show.jpeg"
+                    alt="Miami boat show"
+                    class="img"
+                  />
+                  <figcaption>The Miami boat show.</figcaption>
+                </figure>
+                <figure class="slide">
+                  <img
+                    src="../assets/boatshow/Palm_Beach_Boat_Show.jpeg"
+                    alt="Palm beach boat show"
+                    class="img"
+                  />
+                  <figcaption>The Palm beach boat show.</figcaption>
+                </figure>
+                <figure class="slide">
+                  <img
+                    src="../assets/boatshow/Sanctuary_Cove_Marina.jpg"
+                    alt="Sanctuary cove marina"
+                    class="img"
+                  />
+                  <figcaption>The Sanctuary cove marina.</figcaption>
+                </figure>
+                <div class="navigation">
+                  <label for="r1" class="bar"
+                    ><img
+                      src="../assets/boatshow/min_Dubai_Boat_Show.jpg"
+                      width="50"
+                      height="50"
+                      alt=""
+                  /></label>
+                  <label for="r2" class="bar"
+                    ><img
+                      src="../assets/boatshow/min_Miami_Boat_Show.jpg"
+                      width="50"
+                      height="50"
+                      alt=""
+                  /></label>
+                  <label for="r3" class="bar"
+                    ><img
+                      src="../assets/boatshow/min_Palm_Beach_Boat_Show.jpg"
+                      width="50"
+                      height="50"
+                      alt=""
+                  /></label>
+                  <label for="r4" class="bar"
+                    ><img
+                      src="../assets/boatshow/min_Sanctuary_Cove_Marina.jpg"
+                      width="50"
+                      height="50"
+                      alt=""
+                  /></label>
+                </div>
+              </div>
             </div>
-            <div class="navigation">
-              <label for="r1" class="bar"></label>
-              <label for="r2" class="bar"></label>
-              <label for="r3" class="bar"></label>
-              <label for="r4" class="bar"></label>
-            </div>
-          </div>
-        </section>
-        <section class="details">
-          <h2 class="details__heading">Description</h2>
-          <p class="details__text">
-            Pursuit’s OS 325 offshore boat delivers a combination of finely
-            engineered features designed with a timeless and elegant,
-            yacht-caliber exterior. Her cabin finished with interior hardwoods,
-            solid stock trim and modern fabrics comfort you for an intimate
-            overnight in your private cove or harbor.
-          </p>
-          <h2 class="details__heading">Basic Details</h2>
-          <dl>
-            <dt class="details__item">Type</dt>
-            <dd class="details__text">Cabin</dd>
-            <dd class="details__text">Cruisers</dd>
-            <dt class="details__item">Length</dt>
-            <dd class="details__text">34'6''</dd>
-            <dt class="details__item">Propulsion</dt>
-            <dd class="details__text">Outboard</dd>
-            <dt class="details__item">Year</dt>
-            <dd class="details__text">2024</dd>
-          </dl>
-        </section>
-      </main>
-      <aside>
-        <p>Here can be your advertising!</p>
-      </aside>
+          </section>
+          <article class="details">
+            <section class="details__desc">
+              <h2 class="details__heading">Description</h2>
+              <p class="details__text">
+                engineered features designed with a timeless and elegant,
+                yacht-caliber exterior. Her cabin finished with interior
+                hardwoods, solid stock trim and modern fabrics comfort you for
+                an intimate overnight in your private cove or harbor.
+              </p>
+            </section>
+            <section class="details__props">
+              <h2 class="details__heading">Basic Details</h2>
+              <dl class="description-list">
+                <div class="dl__item">
+                  <dt class="details__item">Type</dt>
+                  <dd class="details__text">Cabin</dd>
+                  <dd class="details__text">Cruisers</dd>
+                </div>
+                <div class="dl__item">
+                  <dt class="details__item">Length</dt>
+                  <dd class="details__text">34'6''</dd>
+                </div>
+                <div class="dl__item">
+                  <dt class="details__item">Propulsion</dt>
+                  <dd class="details__text">Outboard</dd>
+                </div>
+                <div class="dl__item">
+                  <dt class="details__item">Year</dt>
+                  <dd class="details__text">2024</dd>
+                </div>
+              </dl>
+            </section>
+          </article>
+        </main>
+        <aside>
+          <p>Here can be your advertising!</p>
+        </aside>
+      </div>
+      <footer>
+        <p>&copy;2024</p>
+      </footer>
     </div>
   </body>
 </html>
