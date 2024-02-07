@@ -1,14 +1,13 @@
 :root {
-
+  --clr-hero: #1f2937;
+  --clr-grey:#e5e7eb;
   --ff-primary: 'Roboto', sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
-  /* --clr-quote: #1f2937; */
-
 }
 
 body {
-  background-color: burlywood;
+  background-color: var(--clr-hero);
   font-family: var(--ff-primary);
 }
 
@@ -20,12 +19,17 @@ body {
   background-color: white;
 }
 
+h1,
+h2 {
+  text-align: center;
+}
+
 .bs-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
-  padding-top: 50px;
+  padding-top: 2rem;
   position: relative;
 }
 
@@ -65,16 +69,16 @@ body {
 
 .price::before {
   content: '$';
- 
   margin: 0 5px;
 }
 
 .share-links {
-  width: 100px;
+  max-width: 100px;
+  width: 100%;
   display: flex;
   justify-content: right;
-  gap: 10px;
-  font-size: 2rem;
+  gap: var(--spacing);
+  font-size: 1.5em;
 }
 
 .share-links a {
@@ -96,9 +100,8 @@ body {
 }
 
 .bs-wrapper aside {
-  background-color: green;
-  max-width: 300px;
-  width: 100%;
+  background-color: var(--clr-grey);
+  width: 300px;
   font-size: 3rem;
   display: flex;
   justify-content: center;
@@ -125,13 +128,6 @@ body {
   position: relative;
 }
 
-/* .middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
-
 .navigation {
   position: absolute;
   bottom: 16px;
@@ -156,6 +152,10 @@ body {
   transform:scale(1.1);
 }
 
+.bar img {
+  max-width: s100%;
+  height: 100%;
+}
 
 input[name="r"] {
   position: absolute;
@@ -179,7 +179,7 @@ input[name="r"] {
 }
 
 .img {
-  width: 100%;
+  max-width: 100%;
   height: 80%;
 }
 
@@ -204,7 +204,7 @@ input[name="r"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: var(--spacing);;
   margin: 1rem 0;
 }
 
@@ -225,7 +225,7 @@ input[name="r"] {
 .description-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 2%px;
+  gap: 2%;
 }
 
 .dl__item {
@@ -242,4 +242,46 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+  .bs-header {
+    flex-direction: column;
+  }
+  .share-links {
+   margin-top: 1rem;
+  }
+  .main-heading {
+    font-size: 1.5rem;
+  }
+  .bs-wrapper {
+    flex-direction: column;
+  }
+  .details {
+    flex-direction: column;
+  }
+  .slider {
+    height: auto;
+    width: 100%
+  }
+  .slide figcaption {
+    display: none;
+  }
+  .bs-wrapper aside {
+    width: 100%;
+  }
+  .details__heading {
+    text-align: center;
+  }
+  .navigation {
+    bottom: 5px;
+  }
+
+  .bar {
+    width: 35px;
+    height: 35px;
+  }
 }
