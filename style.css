@@ -353,61 +353,61 @@ Hero
   position: relative;
 }
 
+
 /* ===============
 Services
+
+/* =============== 
+Boats
+
 =============== */
-
-.service {
-  background: var(--clr-white);
-  padding: 3rem 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: var(--radius);
-  text-align: center;
-  transition: var(--transition);
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
 }
 
-.service-icon {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  border: #3882f6 2px solid;
-  border-radius: var(--radius);
-  padding: 2rem;
+body {
+    font-family: Arial, sans-serif;
 }
 
-.service .underline {
-  width: 3rem;
-  height: 0.12rem;
-  transition: var(--transition);
+nav ul {
+    list-style: none;
 }
 
-.service p {
-  transition: var(--transition);
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-.service:hover {
-  background: var(--clr-hero);
-  color: var(--clr-white);
+nav ul li a {
+    color: #301b52;
+    text-decoration: none;
 }
 
-.service:hover p {
-  color: var(--clr-white);
+.boats {
+    padding: 20px;
+    display: inline-block;
+    display: flex;
 }
 
-.service:hover .underline {
-  background: var(--clr-white);
+.boat {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 50%;
+    height: auto;
+    text-align:justify;
 }
 
-@media screen and (min-width: 676px) {
-  .services-center {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .services-center {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+
+.boat img {
+    width: 400px;
+    height: 350px;
 }
 /*
 ===============
@@ -539,6 +539,7 @@ Footer
   color: var(--clr-white);
 }
 
+
 /*-----Contact Page ---*/
 
 .contact{
@@ -589,4 +590,14 @@ form .contact-btn{
 
 .contact-btn:hover{
   background: var(--clr-hero);
+=======
+.link-to-details {
+  display: block;
+  margin: 1rem 0;
+}
+
+.link-to-details::after {
+  content: "\021D2";
+  margin-left: 5px;
+
 }
