@@ -3,6 +3,7 @@
 Fonts
 ===============
 */
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
 /*
@@ -12,7 +13,6 @@ Variables
 */
 
 :root {
- 
   --ff-primary: 'Roboto', sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
@@ -23,11 +23,10 @@ Variables
   --clr-btn: #3882f6;
   --clr-quote: #e5e7eb;
   --clr-white: #fff;
-  --clr-grey:#e5e7eb;
-  --clr-main-text:#f9faf8;
-  /* --clr-quote: #1f2937; */
-
+  --clr-grey: #e5e7eb;
+  --clr-main-text: #f9faf8;
 }
+
 /*
 =============== 
 Global Styles
@@ -39,6 +38,7 @@ Global Styles
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: var(--ff-primary);
   background: var(--clr-white);
@@ -46,9 +46,11 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
 }
+
 ul {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
 }
@@ -58,30 +60,33 @@ img:not(.nav-logo) {
   display: block;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
   letter-spacing: var(--spacing);
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
 }
+
 h1 {
   font-size: 3rem;
 }
+
 h2 {
   font-size: 2rem;
 }
+
 h3 {
   font-size: 1.25rem;
 }
+
 h4 {
   font-size: 0.875rem;
 }
+
 p {
   margin-bottom: 1.25rem;
 }
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
@@ -98,15 +103,12 @@ p {
   body {
     font-size: 1rem;
   }
-  h1,
-  h2,
-  h3,
-  h4 {
+  h1, h2, h3, h4 {
     line-height: 1;
   }
 }
-/*  global classes */
 
+/* Global Classes */
 .btn {
   text-transform: uppercase;
   background: var(--clr-btn);
@@ -114,7 +116,6 @@ p {
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
-  /* font-weight: 700; */
   border-radius: var(--radius);
   transition: var(--transition);
   font-size: 0.875rem;
@@ -122,6 +123,7 @@ p {
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
+
 .btn:hover {
   color: var(--clr-primary-1);
   background: var(--clr-primary-8);
@@ -191,6 +193,7 @@ Navbar
   color: var(--clr-white);
   font-weight: 700;
 }
+
 .nav-center {
   width: 100%;
   max-width: 1170px;
@@ -205,8 +208,8 @@ Navbar
   transition: var(--transition);
 }
 
-.navbar a:hover{
-    color: var(--clr-btn);
+.navbar a:hover {
+  color: var(--clr-btn);
 }
 
 #check {
@@ -289,7 +292,6 @@ Hero
 ===============
 */
 
-
 .hero-img {
   display: none;
 }
@@ -311,7 +313,7 @@ Hero
 
 .hero-info h4 {
   color: var(--clr-quote);
-  font-size: 0.9375rem ;
+  font-size: 0.9375rem;
 }
 
 .hero-icons {
@@ -396,9 +398,8 @@ nav ul li a {
     padding-bottom: 20px;
     width: 50%;
     height: auto;
-    text-align:justify;
+    text-align: justify;
 }
-
 
 .boat img {
     width: 400px;
@@ -435,7 +436,6 @@ cite{
     }
 }
 
-
 /*
 =============== 
 cta
@@ -443,9 +443,8 @@ cta
 */
 .cta-btn{
   border: 1px var(--clr-white) solid;
-  
-  
 }
+
 .cta-center{
     max-width: 768px;
 }
@@ -453,7 +452,6 @@ cta
 .cta-title {
   color: var(--clr-white);
   padding: 1rem 2rem;
-
 }
 
 .wrapper{
@@ -470,11 +468,9 @@ cta
 }
 .cta-title p {
   color: var(--clr-primary-8);
-
 }
 
 @media (max-width:768px){
-
     .wrapper {
         flex-direction: column;
     }
@@ -482,7 +478,6 @@ cta
         text-align: center;
     }
 }
-
 
 /*
 =============== 
