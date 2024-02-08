@@ -4,31 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../fontAwesome/all.min.css" />
+    <link rel="stylesheet" href="./resources/css/style.css" />
+    <link rel="stylesheet" href="./fontAwesome/all.min.css" />
     <script
       src="https://kit.fontawesome.com/e0ce8f6187.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header class="header">
-      <a href="#" class="logo"
-        ><img class="nav-logo" src="../images/logo-grouptask.svg" alt=""
-      /></a>
-      <input type="checkbox" id="check" />
-      <label for="check" class="icons">
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-        <i class="fa-solid fa-x" id="close-icon"></i>
-      </label>
-      <nav class="navbar">
-        <a href="../../index.html">Home</a>
-        <a href="/resources/pages/About-Us.html">About</a>
-        <a href="./pages/Boat-Show.html">Boat Show</a>
-        <a href="./pages/Boats.html">Boats</a>
-        <a href="/Contact.html">Contact</a>
-      </nav>
-    </header>
+    <header class="header"> 
+      <a href="#" class="logo">
+        <figure class="logo-container">
+          <img class="nav-logo"  src="./resources/images/logo-boatshow.svg" alt="">
+          <figcaption class="logo-title">Boat Show</figcaption>
+        </figure>
+      </a>
+
+
+
+        <input type="checkbox" id="check" />
+        <label for="check" class="icons">
+          <i class="fa-solid fa-bars" id="menu-icon"></i>
+          <i class="fa-solid fa-x" id="close-icon"></i>
+        </label>
+
+
+        <nav class="navbar">
+          <a href="./index.html">Home</a>
+          <a href="./resources/pages/Boat-Show.html">Boat Show</a>
+          <a href="#services">Boats</a>
+          <a href="#about">About Us</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+
+
+
+      </header>
 
 
 
@@ -44,7 +55,7 @@
                     <a href="contact.html" class="btn hero-btn">More boats</a>
                 </header>
                 <figure class="hero-img">
-                    <img src="../images/hero-beach.jpeg" class="hero-photo" alt="john Doe" />
+                    <img src="./resources/images/hero-beach.jpeg" class="hero-photo" alt="john Doe" />
                 </figure>
             </article>
         </section>
@@ -137,41 +148,36 @@
       
           
   
-    <footer class="section footer">
-      <ul class="footer-links">
-        <li><a class="footer-link" href="#">Home</a></li>
-        <li><a class="footer-link" href="#">About</a></li>
-        <li><a class="footer-link" href="#">Boatshow</a></li>
-        <li><a class="footer-link" href="#">boats</a></li>
-        <li><a class="footer-link" href="#">contact</a></li>
-      </ul>
-      <ul class="footer-icons">
-        <li>
-          <a class="footer-icon" href="https://twitter.com" target="_blank"
-            ><i class="fab fa-twitter"></i
-          ></a>
-        </li>
-        <li>
-          <a class="footer-icon" href="https://instagram.com" target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </li>
-        <li>
-          <a class="footer-icon" href="https://facebook.com" target="_blank"
-            ><i class="fab fa-facebook"></i
-          ></a>
-        </li>
-        <li>
-          <a class="footer-icon" href="https://github.com" target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-        </li>
-      </ul>
-      <p class="copyright">
-        copyright &copy; some boat company <span id="date"></span>. all rights
-        reserved
-      </p>
-    </footer>
+        <footer class="section footer">
+          <ul class="footer-icons">
+            <li>
+              <a class="footer-icon" href="https://twitter.com" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a class="footer-icon" href="https://instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a class="footer-icon" href="https://facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a class="footer-icon" href="https://github.com" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <p class="copyright">
+                copyright &copy; some boat company <span id="date"></span>.
+                all rights reserved
+              </p>
+            </li>
+          </ul>
+        </footer>
         
         
       

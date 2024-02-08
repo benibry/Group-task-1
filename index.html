@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,145 +6,181 @@
     <title>Document</title>
     <link rel="stylesheet" href="./resources/css/style.css" />
     <link rel="stylesheet" href="./fontAwesome/all.min.css" />
-    <script src="https://kit.fontawesome.com/e0ce8f6187.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/e0ce8f6187.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header"> 
       <a href="#" class="logo">
-        <img class="nav-logo" src="./resources/images/logo-grouptask.svg" alt="" />
+        <figure class="logo-container">
+          <img class="nav-logo"  src="./resources/images/logo-boatshow.svg" alt="">
+          <figcaption class="logo-title">Boat Show</figcaption>
+        </figure>
       </a>
-      <input type="checkbox" id="check" />
-      <label for="check" class="icons">
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-        <i class="fa-solid fa-x" id="close-icon"></i>
-      </label>
-      <nav class="navbar">
-        <a href="/resources/pages/About-Us.html">About</a>
-        <a href="/resources/pages/Boat-show.html">Boat Show</a>
-        <a href="/resources/pages/Boats.html">Boats</a>
-        <a href="/resources/pages/Contact-Us.html">Contact</a>
-      </nav>
-    </header>
 
-    <main>
-      <section class="hero">
-        <div class="section-center hero-center">
-          <article class="hero-info">
-            <h1>Boat Page</h1>
-            <h4>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
-              accusantium recusandae iure libero nam doloribus perferendis
-              commodi aperiam, minima rem.
-            </h4>
-            <a href="contact.html" class="btn hero-btn">More boats</a>
-          </article>
-          <article class="hero-img">
-            <img src="/resources/images/hero-beach.jpeg" class="hero-photo" alt="john Doe" />
-          </article>
-        </div>
-      </section>
 
-      <section class="section">
-        <div class="section-title">
-          <h2>Captains</h2>
-        </div>
-        <div class="services-center section-center">
-          <article class="service">
-            <i class="fas fa-code service-icon"></i>
-            <h4>lorem</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic,
-              unde facere repellat perferendis laboriosam incidunt. Est magnam
-              quam cumque officia?
-            </p>
-          </article>
-          <article class="service">
-            <i class="fab fa-sketch service-icon"></i>
-            <h4>lorem</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic,
-              unde facere repellat perferendis laboriosam incidunt. Est magnam
-              quam cumque officia?
-            </p>
-          </article>
-          <article class="service">
-            <i class="fab fa-android service-icon"></i>
-            <h4>lorem</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic,
-              unde facere repellat perferendis laboriosam incidunt. Est magnam
-              quam cumque officia?
-            </p>
-          </article>
-          <article class="service">
-            <i class="fab fa-android service-icon"></i>
-            <h4>lorem</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic,
-              unde facere repellat perferendis laboriosam incidunt. Est magnam
-              quam cumque officia?
-            </p>
-          </article>
-        </div>
-      </section>
 
-      <section class="section bg-grey">
-        <div class="section-center">
-          <blockquote>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab tempora
-            explicabo et in qui eius id ea enim, ducimus iste?
-          </blockquote>
-          <cite>ronald mcdonald</cite>
-        </div>
-      </section>
+        <input type="checkbox" id="check" />
+        <label for="check" class="icons">
+          <i class="fa-solid fa-bars" id="menu-icon"></i>
+          <i class="fa-solid fa-x" id="close-icon"></i>
+        </label>
 
-      <section class="section">
-        <div class="section-center cta-center">
-          <div class="wrapper">
-            <article class="cta-title">
-              <h3>want latest tour info updates?</h3>
-              <p>Sign up for newsletter and stay up to date</p>
+
+        <nav class="navbar">
+          <a href="./index.html">Home</a>
+          <a href="./resources/pages/Boat-Show.html">Boat Show</a>
+          <a href="#services">Boats</a>
+          <a href="#about">About Us</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+
+
+
+      </header>
+
+
+
+      <main>
+        <section class="hero">
+            <article class="section-center hero-center">
+                <header class="hero-info">
+                    <h1>Boat Show</h1>
+                    <h4>Embark on a Sea of Spectacles - Navigate 
+                      Your Dreams at Boat Show! Unveiling the 
+                      Future of Marine Marvels, Adventure, and Luxury. 
+                      Dive into the Experience of a Lifetime!</h4>
+                    <a href="contact.html" class="btn hero-btn">More boats</a>
+                </header>
+                <figure class="hero-img">
+                    <img src="./resources/images/hero-beach.jpeg" class="hero-photo" alt="john Doe" />
+                </figure>
             </article>
-            <a href="#" class="btn cta-btn">sign up</a>
-          </div>
-        </div>
-      </section>
-    </main>
+        </section>
+    
 
-    <footer class="section footer">
-      <ul class="footer-links">
-        <li><a class="footer-link" href="#">Home</a></li>
-        <li><a class="footer-link" href="#">About</a></li>
-        <li><a class="footer-link" href="#">Boatshow</a></li>
-        <li><a class="footer-link" href="#">boats</a></li>
-        <li><a class="footer-link" href="#">contact</a></li>
-      </ul>
-      <ul class="footer-icons">
-        <li>
-          <a class="footer-icon" href="https://twitter.com" target="_blank">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </li>
-        <li>
-          <a class="footer-icon" href="https://instagram.com" target="_blank">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-        <li>
-          <a class="footer-icon" href="https://facebook.com" target="_blank">
-            <i class="fab fa-facebook"></i>
-          </a>
-        </li>
-        <li>
-          <a class="footer-icon" href="https://github.com" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </li>
-      </ul>
-      <p class="copyright">
-        copyright &copy; some boat company <span id="date"></span>. all rights
-        reserved
-      </p>
-    </footer>
+
+
+        <section class="section">
+            <header class="section-title">
+                <h2>Aquatic Odyssey Expo</h2>
+           </header>
+           
+            <article class="services-center section-center">
+                <section class="service">
+                  <figure class="img-container">
+                    <img class="img"  src="./resources/images/logo-boatshow.svg" alt="">
+                    <figcaption class="img-text">Celebrate the artistic side of the 
+                      marine world with an art and culture corner. Feature maritime-inspired 
+                      art galleries, live painting sessions, and performances related to the sea.
+                    </figcaption>
+                  </figure>
+                </section>
+                
+
+
+                <section class="service">
+                  <figure class="img-container">
+                    <img class="img"  src="./resources/images/logo-boatshow.svg" alt="">
+                    <figcaption class="img-text">Create an underwater exploration zone 
+                      where visitors can experience virtual reality submarine rides or 
+                      explore a simulated underwater environment. 
+                    </figcaption>
+                  </figure>
+                </section>
+
+
+                <section class="service">
+                  <figure class="img-container">
+                    <img class="img"  src="./resources/images/logo-boatshow.svg" alt="">
+                    <figcaption class="img-text">Introduce an adrenaline-pumping area 
+                      dedicated to water sports and adventures. Include live demonstrations 
+                      of jet skiing, paddleboarding, water skiing, and more.
+                    </figcaption>
+                  </figure>
+                </section>
+
+
+
+                <section class="service">
+                  <figure class="img-container">
+                    <img class="img"  src="./resources/images/logo-boatshow.svg" alt="">
+                    <figcaption class="img-text">Design floating exhibits that showcase 
+                      luxury and innovative lifestyles associated with living on the water. 
+                      Include houseboats, floating homes, and eco-friendly living solutions.
+                    </figcaption>
+                  </figure>
+                </section>
+
+
+            </article>
+        </section>
+    
+        <section class="section bg-grey">
+            <article class="section-center">
+                <blockquote>Aquatic Odyssey Expo" is not just a typical boat show; 
+                  it's a comprehensive celebration of everything related to the water, 
+                  offering a diverse range of activities and exhibits that go beyond 
+                  traditional boats. The event aims to captivate visitors with the 
+                  wonders of marine life, cutting-edge watercraft, and water-based adventures.
+                </blockquote>
+                <footer>ronald mcdonald</footer>
+            </article>
+        </section>
+    
+        <section class="section contact" id="contact">
+            <article class="section-center contact-center">
+                <header class="contact-title">
+                    <h3>want latest tour info updates?</h3>
+                    <p>Sign up for newsletter and stay up to date</p>
+                    <a href="" class="btn">this is a button</a>
+                </header>
+            </article>
+        </section>
+    </main>
+    
+
+
+
+
+      
+          
+  
+        <footer class="section footer">
+          <ul class="footer-icons">
+            <li>
+              <a class="footer-icon" href="https://twitter.com" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a class="footer-icon" href="https://instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a class="footer-icon" href="https://facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a class="footer-icon" href="https://github.com" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <p class="copyright">
+                copyright &copy; some boat company <span id="date"></span>.
+                all rights reserved
+              </p>
+            </li>
+          </ul>
+        </footer>
+        
+        
+      
+
   </body>
 </html>
