@@ -409,6 +409,13 @@ nav ul li a {
     width: 400px;
     height: 350px;
 }
+
+@media (max-width: 768px) {
+  .boats{
+    flex-direction: column;
+    align-items: center;
+  }
+}
 /*
 ===============
 quote
@@ -590,7 +597,8 @@ form .contact-btn{
 
 .contact-btn:hover{
   background: var(--clr-hero);
-=======
+}
+
 .link-to-details {
   display: block;
   margin: 1rem 0;
