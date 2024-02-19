@@ -590,7 +590,8 @@ form .contact-btn{
 
 .contact-btn:hover{
   background: var(--clr-hero);
-=======
+}
+
 .link-to-details {
   display: block;
   margin: 1rem 0;
